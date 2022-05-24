@@ -21,9 +21,9 @@ var albums = []album{
 func main() {
     router := gin.Default()
     router.GET("/albums", controller.GetAlbums(albums))
-    router.GET("/albums/:id", controller.GetAlbumByID(albums))
-    router.POST("/albums", controller.PostAlbums(albums))
-    router.DELETE("/albums/:id", controller.DeleteAlbumByID(albums))
+    // router.GET("/albums/:id", controller.GetAlbumByID(albums))
+    // router.POST("/albums", controller.PostAlbums(albums))
+    // router.DELETE("/albums/:id", controller.DeleteAlbumByID(albums))
 
     router.Run("localhost:8080")
 }

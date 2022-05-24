@@ -14,7 +14,7 @@ type album struct {
 
 
 // getAlbums responds with the list of all albums as JSON.
-func GetAlbums(c *gin.Context, albums []album) {
+func GetAlbums(c *gin.Context, albums *gin.Context, []controller.album) {
     c.IndentedJSON(http.StatusOK, albums)
 }
 
