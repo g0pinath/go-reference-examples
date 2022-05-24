@@ -17,9 +17,9 @@ type album struct {
 func main() {
     router := gin.Default()
     router.GET("/albums", controller.GetAlbums)
-    // router.GET("/albums/:id", controller.GetAlbumByID(albums))
-    // router.POST("/albums", controller.PostAlbums(albums))
-    // router.DELETE("/albums/:id", controller.DeleteAlbumByID(albums))
+    router.GET("/albums/:id", controller.GetAlbumByID)
+    router.POST("/albums", controller.PostAlbums)
+    router.DELETE("/albums/:id", controller.DeleteAlbumByID)
 
     router.Run("localhost:8080")
 }
