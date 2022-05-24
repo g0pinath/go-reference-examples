@@ -16,8 +16,3 @@ func main() {
 
     router.Run("localhost:8080")
 }
-
-// getAlbums responds with the list of all albums as JSON.
-// func getAlbums(c *gin.Context) {
-//     c.IndentedJSON(http.StatusOK, albums)
-// }
