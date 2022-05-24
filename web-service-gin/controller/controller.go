@@ -36,7 +36,6 @@ func DeleteAlbumByID(c *gin.Context) {
     // Loop through the list of albums, looking for
     // an album whose ID value matches the parameter.
     for _, a := range albums {
-        fmt.Println("comparing id", id, "against a.id", a.ID)
         if a.ID == id {
             albums = remove(albums, index_slice)
             return 
