@@ -10,9 +10,9 @@ import (
 func main() {
     router := gin.Default()
     router.GET("/albums", controller.GetAlbums)
-    router.GET("/albums/:id", Controller.GetAlbumByID)
-    router.POST("/albums", Controller.PostAlbums)
-    router.DELETE("/albums/:id", DeleteAlbumByID)
+    router.GET("/albums/:id", controller.GetAlbumByID)
+    router.POST("/albums", controller.PostAlbums)
+    router.DELETE("/albums/:id", controller.DeleteAlbumByID)
 
     router.Run("localhost:8080")
 }
