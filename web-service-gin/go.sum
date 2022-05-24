@@ -1,5 +1,7 @@
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/g0pinath/go-reference-examples v0.0.0-20220524090725-d4303583146b h1:lnD6uAwJx5opKu4KkMQJyJZcSCIeWbgBBR5Sm9dexag=
+github.com/g0pinath/go-reference-examples v0.0.0-20220524090725-d4303583146b/go.mod h1:p+fuMS8TN++cu3uLLCqPEuk8+z0VIYXqkNhQICs/iK4=
 github.com/gin-contrib/sse v0.1.0 h1:Y/yl/+YNO8GZSjAhjMsSuLt29uWRFHdHYUb5lYOV9qE=
 github.com/gin-contrib/sse v0.1.0/go.mod h1:RHrZQHXnP2xjPF+u1gW/2HnVO7nvIa9PG3Gm+fLHvGI=
 github.com/gin-gonic/gin v1.7.7 h1:3DoBmSbJbZAWqXJC3SLjAPfutPJJRN1U5pALB7EeTTs=

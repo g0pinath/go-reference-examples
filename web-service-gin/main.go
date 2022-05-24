@@ -4,7 +4,7 @@ import (
     "net/http"
     "fmt"
     "github.com/gin-gonic/gin"
-    "https://github.com/g0pinath/go-reference-examples/tree/main/web-service-gin/controllers"
+    "github.com/g0pinath/go-reference-examples/controllers"
 )
 
 // album represents data about a record album.
