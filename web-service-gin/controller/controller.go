@@ -12,14 +12,9 @@ type album struct {
     Price  float64 `json:"price"`
 }
 
-// albums slice to seed record album data.
-var albums = []album{
-    {ID: "1", Title: "Blue Train", Artist: "John Coltrane", Price: 56.99},
-    {ID: "2", Title: "Jeru", Artist: "Gerry Mulligan", Price: 17.99},
-    {ID: "3", Title: "Sarah Vaughan and Clifford Brown", Artist: "Sarah Vaughan", Price: 39.99},
-}
+
 // getAlbums responds with the list of all albums as JSON.
-func GetAlbums(c *gin.Context) {
+func GetAlbums(c *gin.Context, albums []album) {
     c.IndentedJSON(http.StatusOK, albums)
 }
 
@@ -28,7 +23,7 @@ func remove(albums []album, i int) []album {
 	return albums[:len(albums)-1]
 }
 
-func DeleteAlbumByID(c *gin.Context) {
+func DeleteAlbumByID(c *gin.Context, albums []album) {
 
     id := c.Param("id")
     index_slice := 0
@@ -46,7 +41,7 @@ func DeleteAlbumByID(c *gin.Context) {
 }
 
 // postAlbums adds an album from JSON received in the request body.
-func PostAlbums(c *gin.Context) {
+func PostAlbums(c *gin.Context, albums []album) {
     var newAlbum album
 
     // Call BindJSON to bind the received JSON to
@@ -62,7 +57,7 @@ func PostAlbums(c *gin.Context) {
 
 // getAlbumByID locates the album whose ID value matches the id
 // parameter sent by the client, then returns that album as a response.
-func GetAlbumByID(c *gin.Context) {
+func GetAlbumByID(c *gin.Context, albums []album) {
     id := c.Param("id")
 
     // Loop through the list of albums, looking for
